@@ -1,0 +1,55 @@
+.header {
+  position: absolute;
+  padding: 20px 15px;
+  width: 100%;
+  z-index: 111;
+  height: 92px;
+  .wrapper-header {
+    max-width: 1230px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    .header-logo {
+      padding: 15px 0;
+    }
+    .header-nav {
+      .nav {
+        display: flex;
+        justify-content: space-between;
+        &-item {
+          margin-right: 40px;
+          padding: 16px 0;
+          transition: 0.5s;
+        }
+        &-item:hover {
+          color: #fd4a29;
+        }
+      }
+    }
+    .header-btn {
+      .login {
+        padding-left: 64px;
+        position: relative;
+        transition: 0.5s;
+      }
+      .login::before {
+        content: url(/src/assets/images/main/Profile.png);
+        position: absolute;
+        top: 0px;
+        left: 36px;
+        transition: 0.5s;
+      }
+      .login:hover {
+        color: #fd4a29;
+      }
+      .login:hover::before {
+        filter: invert(40%) sepia(77%) saturate(2242%) hue-rotate(335deg)
+          brightness(97%) contrast(110%);
+      }
+    }
+  }
+}
+.header-scroll{
+  position: fixed;
+  background-color: #fff;
+}

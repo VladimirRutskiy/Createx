@@ -1,0 +1,101 @@
+.main {
+    height: 100vh;
+    background-image: url(/src/assets/images/main/background.jpg);
+    background-repeat: no-repeat;
+    padding-top: 200px;
+    .wrapper-main {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-content: stretch;
+      min-height: 100%;
+    }
+    .wrapper {
+      .content {
+        display: flex;
+        justify-content: space-between;
+        &-text {
+          max-width: 496px;
+          .btn-play {
+            margin-bottom: 20px;
+            display: inline-block;
+            font-size: 14px;
+            line-height: 21px;
+            padding: 25px 0px 30px 65px;
+            position: relative;
+            transition: 0.5s;
+          }
+  
+          .btn-play:hover {
+            color: #fd4a29;
+          }
+          .btn-play::before {
+            content: url("/src/assets/images/main/Polygon.svg");
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            padding: 10px 0 0 3px;
+            width: 52px;
+            height: 52px;
+            right: 95px;
+            top: 10px;
+            background-color: #ff3f3a;
+            border-radius: 50%;
+          }
+          .h1-like {
+            max-width: 500px;
+            margin-bottom: 60px;
+            color: #1e212c;
+          }
+          .btn-about {
+            width: 148px;
+            margin-right: 24px;
+          }
+          .btn-explore {
+            width: 200px;
+          }
+        }
+        &-image {
+          max-width: 602px;
+          img {
+            width: 100%;
+          }
+        }
+      }
+      .statistics {
+        margin-bottom: 80px;
+        ul {
+          display: flex;
+          justify-content: space-between;
+          color: #1e212c;
+          li {
+            display: flex;
+            align-items: center;
+            position: relative;
+  
+            span {
+              font-size: 46px;
+              line-height: 60px;
+              padding-right: 12px;
+            }
+          }
+          li::after {
+            content: ("");
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background-color: #ff3f3a;
+            border-radius: 50%;
+            left: -80px;
+          }
+          li:last-child {
+            padding-right: 0;
+          }
+          li:first-child::after {
+            content: none;
+          }
+        }
+      }
+    }
+  }

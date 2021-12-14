@@ -1,0 +1,99 @@
+.blog {
+    padding: 120px 0 180px;
+    .wrapper {
+      .blog-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding-bottom: 60px;
+        .h3-like {
+          padding-bottom: 8px;
+        }
+      }
+      .gallery {
+        display: flex;
+        justify-content: space-between;
+        &-item {
+          max-width: 390px;
+          .item-img {
+            width: 100%;
+            padding-bottom: 16px;
+            position: relative;
+          }
+          .podcast::before {
+            content: url(/src/assets/images/blog/podcast.png);
+            position: absolute;
+            top: 12px;
+            left: 12px;
+          }
+          .video::before {
+            content: url(/src/assets/images/blog/video.png);
+            position: absolute;
+            top: 12px;
+            left: 12px;
+          }
+          .article::before {
+            content: url(/src/assets/images/blog/article.png);
+            position: absolute;
+            top: 12px;
+            left: 12px;
+          }
+          .time {
+            display: flex;
+            color: #787a80;
+            font-size: 14px;
+            line-height: 21px;
+            padding-bottom: 8px;
+            .label {
+              padding-right: 12px;
+              border-right: 1px solid #787a80;
+              font-weight: bold;
+            }
+            .date {
+              padding-right: 12px;
+              padding-left: 36px;
+              border-right: 1px solid #787a80;
+              position: relative;
+            }
+            .date::before {
+              content: url(/src/assets/images/blog/calendar.svg);
+              position: absolute;
+              top: 4px;
+              left: 12px;
+            }
+            .duration {
+              padding-left: 36px;
+              position: relative;
+            }
+            .duration::before {
+              content: url(/src/assets/images/blog/Clock.svg);
+              position: absolute;
+              top: 4px;
+              left: 12px;
+            }
+          }
+          .item-title {
+            margin-bottom: 8px;
+            font-size: 20px;
+            line-height: 30px;
+          }
+          .item-text {
+            margin-bottom: 16px;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 26px;
+            color: #424551;
+          }
+          .btn-link {
+            position: relative;
+          }
+          .btn-link::after {
+            content: url(/src/assets/images/blog/Right.svg);
+            position: absolute;
+            top: -4px;
+            left: 47px;
+          }
+        }
+      }
+    }
+  }

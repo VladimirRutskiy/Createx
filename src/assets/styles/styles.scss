@@ -1,0 +1,106 @@
+@import "./normalize.scss";
+@import "./reset";
+@import "./main";
+
+// Font
+$mainFont: "Lato", sans-serif;
+@font-face {
+  font-family: "lato-black";
+  font-display: swap;
+  src: url("/src/assets/fonts/Lato-Black.eot");
+  src: local("O"), url("/src/assets/fonts/Lato-Black.woff") format("woff"),
+    url("/src/assets/fonts/Lato-Black.ttf") format("truetype"),
+    //url("/src/assets/fonts/Lato-Black.svg") format("svg");
+    font-weight 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "lato-bold";
+  font-display: swap;
+  src: url("/src/assets/fonts/Lato-Bold.eot");
+  src: local("O"), url("/src/assets/fonts/Lato-Bold.woff") format("woff"),
+    url("/src/assets/fonts/Lato-Bold.ttf") format("truetype"),
+    //url("/src/assets/fonts/Lato-Bold.svg") format("svg");
+    font-weight 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "lato-regular";
+  font-display: swap;
+  src: url("/src/assets/fonts/Lato-Regular.eot");
+  src: local("O"), url("/src/assets/fonts/Lato-Regular.woff") format("woff"),
+    url("/src/assets/fonts/Lato-Regular.ttf") format("truetype"),
+    //url("/src/assets/fonts/Lato-BRegular.svg") format("svg");
+    font-weight 400;
+  font-style: normal;
+}
+html {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 26px;
+  color: #424551;
+  cursor: default;
+}
+h1 {
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 83px;
+  letter-spacing: 1px;
+  color: #1E212C;
+}
+h2 {
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 60px;
+  color: #1E212C;
+}
+h3 {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1E212C;
+}
+.btn {
+  display: inline-block;
+  text-align: center;
+  width: 206px;
+  height: 52px;
+  padding: 16px 40px;
+  background-color: #f9590f;
+  border-radius: 4px;
+  color: #fff;
+  box-shadow: 0 10px 30px 0 rgba(229, 229, 229, 0.7);
+  transition: 0.5s;
+}
+.btn:active {
+  color: #f9590f;
+  box-shadow: none;
+}
+.btn-clear {
+  display: inline-block;
+  text-align: center;
+  width: 206px;
+  height: 52px;
+  padding: 16px 40px;
+  border: 1px solid #f9590f;
+  border-radius: 4px;
+  color: #f9590f;
+  box-shadow: 0 10px 30px 0 rgba(229, 229, 229, 0.7);
+  transition: 0.5s;
+}
+.btn-clear:active {
+  color: #fff;
+  box-shadow: none;
+}
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+}
+.wrapper {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
