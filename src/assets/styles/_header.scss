@@ -1,0 +1,132 @@
+.header {
+  position: absolute;
+  padding: 20px 50px;
+  width: 100%;
+  z-index: 111;
+  height: 92px;
+  &-wrapper {
+    max-width: 1230px;
+    margin: 0 auto;
+    display: flex;
+  }
+  &-logo {
+    margin-right: 60px;
+    padding: 15px 0;
+    z-index: 2;
+  }
+  &-nav {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  &-item {
+    margin-right: 40px;
+    padding: 16px 0;
+    transition: 0.5s;
+  }
+  &-item:hover {
+    color: #fd4a29;
+  }
+}
+.login {
+  padding: 0 44px 0 64px;
+  position: relative;
+  transition: 0.5s;
+}
+.login::before {
+  content: url(/src/assets/images/main/Profile.png);
+  position: absolute;
+  top: 0px;
+  left: 36px;
+  transition: 0.5s;
+}
+.login:hover {
+  color: #fd4a29;
+}
+.login:hover::before {
+  filter: invert(40%) sepia(77%) saturate(2242%) hue-rotate(335deg)
+    brightness(97%) contrast(110%);
+}
+
+.header-scroll {
+  position: fixed;
+  background-color: #fff;
+}
+
+@media (max-width: 1180px) {
+  .header-wrapper {
+    justify-content: space-between;
+  }
+  .header-nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    padding: 100px 0;
+    background-color: #fff;
+    transition: left 0.3s ease 0s;
+  }
+  .menu {
+    flex-direction: column;
+    text-align: center;
+    &-item {
+      margin-right: 0;
+    }
+  }
+  .active {
+    left: 0;
+  }
+  .header-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .nav-icon {
+    margin-top: 20px;
+    z-index: 5;
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 18px;
+    cursor: pointer;
+    span {
+      top: 50%;
+      transform: scale(1) translate(0px, -50%);
+    }
+  }
+  .nav-icon span,
+  .nav-icon::after,
+  .nav-icon::before {
+    left: 0;
+    position: absolute;
+    height: 15%;
+    width: 100%;
+    transition: all 0.3s ease 0s;
+    background-color: #fd4a29;
+  }
+  .nav-icon::after,
+  .nav-icon::before {
+    content: "";
+  }
+  .nav-icon::before {
+    top: 0;
+  }
+  .nav-icon::after {
+    bottom: 0;
+  }
+}
+@media (max-width: 500px) {
+  .header-btn {
+    flex-direction: column;
+  }
+  .login {
+    margin-top: 20px;
+  }
+}

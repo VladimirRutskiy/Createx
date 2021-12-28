@@ -1,0 +1,25 @@
+.certificate {
+    .wrapper-certificate {
+      padding: 120px 15px;
+      position: relative;
+      .text {
+        width: 392px;
+        .h3-like {
+          margin-bottom: 8px;
+        }
+        .h2-like {
+          margin-bottom: 48px;
+        }
+        p {
+          margin-bottom: 32px;
+          font-weight: normal;
+        }
+      }
+      .text::after {
+        content: url(/src/assets/images/certificate/image.jpg);
+        position: absolute;
+        top: 120px;
+        right: 15px;
+      }
+    }
+  }

@@ -1,0 +1,41 @@
+.about {
+    background-image: url(/src/assets/images/About/background-about.jpg);
+    background-repeat: no-repeat;
+    margin: 180px 0;
+    .wrapper-about {
+      display: flex;
+      justify-content: space-between;
+      .image {
+        width: 705px;
+        img {
+          object-fit: cover;
+          width: 100%;
+        }
+      }
+      .content {
+        margin-left: 135px;
+        max-width: 390px;
+        .h3-like {
+          margin-bottom: 8px;
+        }
+        .h2-like {
+          margin-bottom: 40px;
+        }
+        .list {
+          font-weight: normal;
+          line-height: 26px;
+          margin-bottom: 22px;
+          li {
+            padding-left: 32px;
+            position: relative;
+          }
+          li::before {
+            content: url(/src/assets/images/About/check-about.png);
+            position: absolute;
+            left: 0px;
+            top: 4px;
+          }
+        }
+      }
+    }
+  }
