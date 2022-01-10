@@ -12,7 +12,7 @@ const devServer = (isDev) => !isDev ? {} : {
         open: true,
         compress: true,
         hot: true,
-        port: 8080,
+        port: 8081,
     },
 };
 
@@ -73,7 +73,12 @@ module.exports = ({ development }) => ({
   },
   plugins: [
     new HtmlWebpackPlugin({
+      filename: "index.html",
       template: "./src/index.pug",
+    }),
+    new HtmlWebpackPlugin({
+      filename: "courses.html",
+      template: "./src/courses.pug",
     }),
     new webpack.HotModuleReplacementPlugin(),
     new MiniCssExtractPlugin({ filename: "[name].[contenthash].css" }),

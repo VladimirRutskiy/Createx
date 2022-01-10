@@ -3,17 +3,51 @@ section.benefits
           h3.h3-like Our benefits
           h2.h2-like That’s how we do it
           .tabs
-            a.tabs-item.star(href='') Experienced Tutors
-            a.tabs-item.shape(href='') Feedback & Support
-            a.tabs-item.layouts(href='') 24/7 Online Library
-            a.tabs-item.chat(href='') Community
-          .info
-            .text
-              .text-title Only practicing tutors
-              p
-                | Urna nisi, arcu cras nunc. Aenean quam est lobortis mi non fames
-                | dictum suspendisse. Morbi mauris cras massa ut dolor quis sociis
-                | mollis augue. Nunc, sodales tortor sit diam mi amet massa.
-                | Fermentum diam diam sociis vestibulum. Nulla nisl accumsan, id
-                | dignissim massa ut amet. Amet enim, nisi tempus vehicula.
-            img(src='./assets/images/benefits/illustration.png' alt='')
+            .tabs-nav
+              .tabs-btn.star(data-tab='#tab-1') Experienced Tutors
+              .tabs-btn.shape(data-tab='#tab-2') Feedback & Support
+              .tabs-btn.layouts(data-tab='#tab-3') 24/7 Online Library
+              .tabs-btn.chat(data-tab='#tab-4') Community
+            .tabs-content
+              #tab-1.tabs-item
+                .text
+                  .title Only practicing tutors
+                  p
+                    | Urna nisi, arcu cras nunc. Aenean quam est lobortis mi non fames
+                    | dictum suspendisse. Morbi mauris cras massa ut dolor quis sociis
+                    | mollis augue. Nunc, sodales tortor sit diam mi amet massa.
+                    | Fermentum diam diam sociis vestibulum. Nulla nisl accumsan, id
+                    | dignissim massa ut amet. Amet enim, nisi tempus vehicula.
+                img(src='./assets/images/benefits/tab-1.png' alt='')
+              #tab-2.tabs-item
+                .text
+                  .title Feedback & Support
+                  p
+                    | Urna nisi, arcu cras nunc. Aenean quam est lobortis mi non fames
+                    | dictum suspendisse. 
+                    | Fermentum diam diam sociis vestibulum. Nulla nisl accumsan, id
+                    | dignissim massa ut amet. Amet enim, nisi tempus vehicula.
+                img(src='./assets/images/benefits/tab-2.png' alt='')
+              #tab-3.tabs-item
+                .text
+                  .title Our Online Library
+                  p
+                    | Morbi mauris cras massa ut dolor quis sociis
+                    | mollis augue. Nunc, sodales tortor sit diam mi amet massa.
+                    | Urna nisi, arcu cras nunc. Aenean quam est lobortis mi non fames
+                    | dictum suspendisse. Morbi mauris cras massa ut dolor quis sociis
+                    | mollis augue. Nunc, sodales tortor sit diam mi amet massa.
+                    | Fermentum diam diam sociis vestibulum. Nulla nisl accumsan, id
+                    | dignissim massa ut amet. Amet enim, nisi tempus vehicula.
+                    | Morbi mauris cras massa ut dolor quis sociis
+                    | mollis augue. Nunc, sodales tortor sit diam mi amet massa.
+                img(src='./assets/images/benefits/tab-3.png' alt='')
+              #tab-4.tabs-item
+                .text
+                  .title Our Community
+                  p
+                    | Urna nisi, arcu cras nunc. Aenean quam est lobortis mi non fames
+                    | dictum suspendisse. Morbi mauris cras massa ut dolor quis sociis
+                    | mollis augue. Nunc, sodales tortor sit diam mi amet massa.
+                    | Fermentum diam diam sociis vestibulum.
+                img(src='./assets/images/benefits/tab-4.png' alt='')

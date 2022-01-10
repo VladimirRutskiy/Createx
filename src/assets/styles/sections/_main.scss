@@ -1,101 +1,189 @@
 .main {
-    height: 100vh;
-    background-image: url(/src/assets/images/main/background.jpg);
-    background-repeat: no-repeat;
-    padding-top: 200px;
-    .wrapper-main {
+  height: 100vh;
+  background-image: url(/src/assets/images/main/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: stretch;
+    min-height: 100%;
+  }
+}
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 200px;
+}
+.content-text {
+  max-width: 496px;
+}
+.btn-play {
+  margin-bottom: 20px;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 25px 0px 30px 65px;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn-play:hover {
+  color: #fd4a29;
+}
+.btn-play::before {
+  content: url("/src/assets/images/main/Polygon.svg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  padding: 10px 0 0 3px;
+  width: 52px;
+  height: 52px;
+  right: 95px;
+  top: 10px;
+  background-color: #ff3f3a;
+  border-radius: 50%;
+}
+.h1-like {
+  max-width: 500px;
+  margin-bottom: 60px;
+  color: #1e212c;
+}
+.btn-about {
+  width: 148px;
+  margin-right: 24px;
+}
+.btn-explore {
+  width: 200px;
+}
+.content-image {
+  max-width: 602px;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+.main-statistics {
+  margin-bottom: 80px;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    color: #1e212c;
+    li {
       display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-content: stretch;
-      min-height: 100%;
+      align-items: center;
+      position: relative;
+
+      span {
+        font-size: 46px;
+        line-height: 60px;
+        padding-right: 12px;
+      }
     }
-    .wrapper {
-      .content {
-        display: flex;
-        justify-content: space-between;
-        &-text {
-          max-width: 496px;
-          .btn-play {
-            margin-bottom: 20px;
-            display: inline-block;
-            font-size: 14px;
-            line-height: 21px;
-            padding: 25px 0px 30px 65px;
-            position: relative;
-            transition: 0.5s;
-          }
-  
-          .btn-play:hover {
-            color: #fd4a29;
-          }
-          .btn-play::before {
-            content: url("/src/assets/images/main/Polygon.svg");
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-            padding: 10px 0 0 3px;
-            width: 52px;
-            height: 52px;
-            right: 95px;
-            top: 10px;
-            background-color: #ff3f3a;
-            border-radius: 50%;
-          }
-          .h1-like {
-            max-width: 500px;
-            margin-bottom: 60px;
-            color: #1e212c;
-          }
-          .btn-about {
-            width: 148px;
-            margin-right: 24px;
-          }
-          .btn-explore {
-            width: 200px;
-          }
-        }
-        &-image {
-          max-width: 602px;
-          img {
-            width: 100%;
-          }
-        }
-      }
-      .statistics {
-        margin-bottom: 80px;
-        ul {
-          display: flex;
-          justify-content: space-between;
-          color: #1e212c;
-          li {
-            display: flex;
-            align-items: center;
-            position: relative;
-  
-            span {
-              font-size: 46px;
-              line-height: 60px;
-              padding-right: 12px;
-            }
-          }
-          li::after {
-            content: ("");
-            position: absolute;
-            width: 8px;
-            height: 8px;
-            background-color: #ff3f3a;
-            border-radius: 50%;
-            left: -80px;
-          }
-          li:last-child {
-            padding-right: 0;
-          }
-          li:first-child::after {
-            content: none;
-          }
-        }
-      }
+    li::after {
+      content: ("");
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background-color: #ff3f3a;
+      border-radius: 50%;
+      left: -80px;
+    }
+    li:last-child {
+      padding-right: 0;
+    }
+    li:first-child::after {
+      content: none;
     }
   }
+}
+
+@media (max-width: 1300px) {
+  .main-statistics ul li::after {
+    left: -60px;
+  }
+}
+@media (max-width: 1180px) {
+  .content-image {
+    max-width: 502px;
+  }
+  .main-statistics ul li span {
+    font-size: 36px;
+    line-height: 50px;
+    padding-right: 12px;
+  }
+  .main-statistics ul li::after {
+    display: none;
+  }
+}
+
+@media (max-width: 1080px) {
+  .content-image {
+    max-width: 402px;
+  }
+}
+
+@media (max-width: 940px) {
+  .h1-like {
+    max-width: 400px;
+  }
+  .content-image {
+    max-width: 352px;
+  }
+  .btn-about {
+    display: block !important;
+    margin-bottom: 20px;
+  }
+  .btn-explore {
+    display: block;
+  }
+}
+@media (max-width: 830px) {
+  .main-statistics ul li span {
+    font-size: 26px;
+    line-height: 40px;
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+}
+
+@media (max-width: 730px) {
+  .content-image {
+    max-width: 252px;
+  }
+  .h1-like {
+    max-width: 300px;
+  }
+  .main-statistics ul li span {
+    font-size: 26px;
+    line-height: 40px;
+  }
+  .main-statistics ul {
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      min-width: 250px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .main-statistics {
+    display: none;
+  }
+  .content-image img {
+    display: none;
+  }
+  .h1-like {
+    max-width: 600px;
+}
+}
+
+@media (max-width: 400px){
+  .h1-like{
+    font-size: 28px;
+    line-height: 40px;
+  }
+}

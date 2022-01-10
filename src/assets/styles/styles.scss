@@ -1,6 +1,7 @@
 @import "./normalize.scss";
 @import "./reset";
-@import "./main";
+@import "./homepage";
+@import "./courses";
 
 // Font
 $mainFont: "Lato", sans-serif;
@@ -48,20 +49,20 @@ h1 {
   font-size: 64px;
   line-height: 83px;
   letter-spacing: 1px;
-  color: #1E212C;
+  color: #1e212c;
 }
 h2 {
   font-weight: 900;
   font-size: 46px;
   line-height: 60px;
-  color: #1E212C;
+  color: #1e212c;
 }
 h3 {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #1E212C;
+  color: #1e212c;
 }
 .btn {
   display: inline-block;
@@ -100,7 +101,36 @@ h3 {
   margin: 0 auto;
 }
 .wrapper {
-  max-width: 1260px;
+  max-width: 1330px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 50px;
+}
+
+@media (max-width: 1180px) {
+  h1 {
+    font-size: 54px;
+    line-height: 73px;
+  }
+  h2 {
+    font-size: 36px;
+    line-height: 50px;
+  }
+  h3 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media (max-width: 1080px) {
+  h1 {
+    font-size: 34px;
+    line-height: 53px;
+  }
+  h2 {
+    font-size: 36px;
+    line-height: 50px;
+  }
+  h3 {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
