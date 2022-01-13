@@ -1,0 +1,93 @@
+.testimonials {
+  padding: 0px 0 100px;
+  background: url(/src/assets/images/tutors/Background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.testimonials-wrapper {
+    position: relative;
+}
+.subtitle-two {
+  text-align: center;
+  margin-bottom: 8px;
+}
+.title-two {
+  margin-bottom: 60px;
+  text-align: center;
+}
+.slider-two {
+  margin: 0 105px 0px;
+  overflow: hidden;
+  
+}
+.slider-line-two {
+  width: 4080px;
+  height: 404px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  left: 0;
+  transition: all ease 1s;
+}
+.slider-two-item {
+  padding: 64px 105px 64px 163px;
+  max-width: 1020px;
+  background-color: #fff;
+}
+.slider-two-item_text {
+  margin-bottom: 24px;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  position: relative;
+}
+.slider-two-item_text::before {
+  content: url(/src/assets/images/tutors/braces.svg);
+  position: absolute;
+  left: -58px;
+  top: -3px;
+}
+.user-profile {
+  display: flex;
+  img {
+    margin-right: 20px;
+  }
+  .discrp {
+    margin: 11px 0;
+    .name {
+      margin-bottom: 4px;
+    }
+    .position {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+}
+
+.slider-btn-two {
+  display: flex;
+  justify-content: space-between;
+}
+.slider-prev-two {
+  content: url(/src/assets/images/tutors/prev-btn.svg);
+  position: absolute;
+  left: 60px;
+  bottom: 200px;
+  transition: 0.5s;
+}
+.slider-prev-two:hover {
+  border-radius: 50%;
+  background-color: #ff3f3a;
+}
+.slider-next-two {
+  content: url(/src/assets/images/tutors/next-btn.svg);
+  position: absolute;
+  right: 60px;
+  bottom: 200px;
+  transition: 0.5s;
+}
+.slider-next-two:hover {
+  border-radius: 50%;
+  background-color: #ff3f3a;
+}

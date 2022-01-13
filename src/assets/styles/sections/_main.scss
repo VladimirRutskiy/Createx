@@ -152,6 +152,11 @@
 @media (max-width: 730px) {
   .content-image {
     max-width: 252px;
+    position: absolute;
+    right: 50px;
+  }
+  .btn-about {
+    display: inline !important;
   }
   .h1-like {
     max-width: 300px;
@@ -170,6 +175,14 @@
 }
 
 @media (max-width: 600px) {
+  .btn-about {
+    display: block !important;
+    margin-bottom: 20px;
+    min-width: 100%;
+  }
+  .btn-explore{
+    min-width: 100%;
+  }
   .main-statistics {
     display: none;
   }

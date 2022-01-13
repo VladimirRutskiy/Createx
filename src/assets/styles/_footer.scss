@@ -1,159 +1,192 @@
 .footer {
-    padding: 80px 0 0px;
-    background-color: #1e212c;
-    color: #7d7f85;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 26px;
-    .wrapper-footer {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 60px;
-      .text {
-        padding-right: 80px;
-        .logo {
-          margin-bottom: 24px;
-        }
-        p {
-          margin-bottom: 38px;
-          width: 279px;
-          font-size: 12px;
-          line-height: 18px;
-        }
-        .socialmedia {
-          display: flex;
-          justify-content: space-between;
-          img:hover {
-            cursor: pointer;
-            filter: invert(35%) sepia(97%) saturate(2412%) hue-rotate(340deg)
-              brightness(102%) contrast(97%);
-          }
-        }
-      }
-      .site-map {
-        margin-right: 80px;
-        .title {
-          color: #fff;
-          margin-bottom: 12px;
-        }
-        li {
-          margin-bottom: 8px;
-        }
-        li:hover {
-          cursor: pointer;
-          color: #fff;
-        }
-      }
-      .courses {
-        .title {
-          color: #fff;
-          margin-bottom: 12px;
-        }
-        li {
-          margin-bottom: 8px;
-        }
-        li:hover {
-          cursor: pointer;
-          color: #fff;
-        }
-      }
-      .contact {
-        a {
-          display: block;
-          margin-bottom: 8px;
-        }
-        .title {
-          color: #fff;
-          margin-bottom: 12px;
-        }
-        .tel {
-          padding-left: 24px;
-          position: relative;
-        }
-        .tel::before {
-          content: url(/src/assets/images/footer/iPhone.svg);
-          position: absolute;
-          top: 3px;
-          left: 2px;
-          filter: invert(56%) sepia(21%) saturate(27%) hue-rotate(190deg)
-            brightness(89%) contrast(91%);
-        }
-        .tel:hover {
-          filter: invert(99%) sepia(99%) saturate(0%) hue-rotate(193deg)
-            brightness(108%) contrast(200%);
-        }
-        .mail {
-          padding-left: 24px;
-          position: relative;
-        }
-        .mail::before {
-          content: url(/src/assets/images/footer/Union.svg);
-          position: absolute;
-          top: 3px;
-          left: 2px;
-          filter: invert(56%) sepia(21%) saturate(27%) hue-rotate(190deg)
-            brightness(89%) contrast(91%);
-        }
-        .mail:hover {
-          filter: invert(99%) sepia(99%) saturate(0%) hue-rotate(193deg)
-            brightness(108%) contrast(200%);
-        }
-      }
-      .signup {
-        width: 286px;
-        .title {
-          color: #fff;
-          margin-bottom: 24px;
-        }
-        .field {
-          margin-bottom: 12px;
-          position: relative;
-          input {
-            padding: 0 24px 0 12px;
-            width: 286px;
-            height: 36px;
-            background-color: #4d4f58;
-            border: 1px solid #8d8e94;
-            border-radius: 4px;
-            color: #ededee;
-          }
-          a {
-            position: absolute;
-            right: 10px;
-            top: 3px;
-            cursor: pointer;
-          }
-        }
-        .description {
-          font-weight: normal;
-          font-size: 10px;
-          line-height: 15px;
-        }
-      }
-    }
-    .footer-line {
-      padding: 20px 0px;
-      background-color: #343741;
-      .wrapper-footer-line {
-        max-width: 1260px;
-        margin: 0 auto;
-        padding: 0 15px;
-        display: flex;
-        justify-content: space-between;
-        .text {
-          span {
-            padding-left: 20px;
-            position: relative;
-          }
-          span:before {
-            content: url(/src/assets/images/footer/Heart.svg);
-            position: absolute;
-            left: 0;
-          }
-        }
-        .gotop-btn:hover {
-          color: #fff;
-        }
-      }
+  padding: 80px 0 0px;
+  background-color: #1e212c;
+  color: #7d7f85;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  &-content {
+    padding-right: 80px;
+    padding-bottom: 50px;
+  }
+  &-logo {
+    margin-bottom: 24px;
+  }
+  &-text {
+    margin-bottom: 38px;
+    width: 279px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  &-socialmedia {
+    display: flex;
+    justify-content: space-between;
+    img:hover {
+      cursor: pointer;
+      filter: invert(35%) sepia(97%) saturate(2412%) hue-rotate(340deg)
+        brightness(102%) contrast(97%);
     }
   }
+}
+.wrapper-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px !important;
+}
+
+.sitemap-list {
+  margin-right: 50px;
+  padding-bottom: 50px;
+  &_title {
+    color: #fff;
+    margin-bottom: 12px;
+  }
+  &_item {
+    margin-bottom: 8px;
+  }
+  &_item:hover {
+    cursor: pointer;
+    color: #fff;
+  }
+}
+.courses-list {
+  margin-right: 50px;
+  padding-bottom: 50px;
+  &_title {
+    color: #fff;
+    margin-bottom: 12px;
+  }
+  &_item {
+    margin-bottom: 8px;
+  }
+  &_item:hover {
+    cursor: pointer;
+    color: #fff;
+  }
+}
+.footer-contact {
+  margin-right: 50px;
+  padding-bottom: 50px;
+  a {
+    display: block;
+    margin-bottom: 8px;
+  }
+  &_title {
+    color: #fff;
+    margin-bottom: 12px;
+  }
+  &_tel {
+    padding-left: 24px;
+    position: relative;
+  }
+  &_tel::before {
+    content: url(/src/assets/images/footer/iPhone.svg);
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    filter: invert(56%) sepia(21%) saturate(27%) hue-rotate(190deg)
+      brightness(89%) contrast(91%);
+  }
+  &_tel:hover {
+    filter: invert(99%) sepia(99%) saturate(0%) hue-rotate(193deg)
+      brightness(108%) contrast(200%);
+  }
+  &_mail {
+    padding-left: 24px;
+    position: relative;
+  }
+  &_mail::before {
+    content: url(/src/assets/images/footer/Union.svg);
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    filter: invert(56%) sepia(21%) saturate(27%) hue-rotate(190deg)
+      brightness(89%) contrast(91%);
+  }
+  &_mail:hover {
+    filter: invert(99%) sepia(99%) saturate(0%) hue-rotate(193deg)
+      brightness(108%) contrast(200%);
+  }
+}
+.footer-signup {
+  width: 286px;
+  &_title {
+    color: #fff;
+    margin-bottom: 24px;
+  }
+  &_field {
+    margin-bottom: 12px;
+    position: relative;
+    input {
+      padding: 0 24px 0 12px;
+      width: 286px;
+      height: 36px;
+      background-color: #4d4f58;
+      border: 1px solid #8d8e94;
+      border-radius: 4px;
+      color: #ededee;
+    }
+    a {
+      position: absolute;
+      right: 10px;
+      top: 3px;
+      cursor: pointer;
+    }
+  }
+  &_description {
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 15px;
+  }
+}
+.footer-line {
+  padding: 20px 0px;
+  background-color: #343741;
+  &_text {
+    span {
+      padding-left: 20px;
+      position: relative;
+    }
+    span:before {
+      content: url(/src/assets/images/footer/Heart.svg);
+      position: absolute;
+      left: 0;
+    }
+  }
+}
+.wrapper-footer-line {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.gotop-btn:hover {
+  color: #fff;
+}
+ @media (max-width: 1295px){
+  .wrapper-footer{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+ }
+
+ @media (max-width: 500px){
+  .footer-content{
+    padding-right: 0;
+  }
+  .wrapper-footer-line{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-line_text{
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 30px;
+  }
+  .gotop-btn{
+    font-size: 16px;
+    line-height: 20px;
+  }
+ }

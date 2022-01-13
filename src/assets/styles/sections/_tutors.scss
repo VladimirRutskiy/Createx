@@ -1,153 +1,91 @@
 .tutors {
-    padding: 166px 0 100px;
-    background: url(/src/assets/images/tutors/tutors.jpg);
-    .wrapper {
-      position: relative;
-      .h3-like {
-        margin-bottom: 8px;
-      }
-      .h2-like {
-        margin-bottom: 60px;
-      }
-      .slider-btn {
-        display: flex;
-        align-items: center;
-        position: absolute;
-        right: 15px;
-        top: 100px;
-        .slider-prev {
-          content: url("/src/assets/images/tutors/prev-btn.svg");
-          margin-right: 24px;
-          transition: 0.5s;
-        }
-        .slider-prev:hover {
-          cursor: pointer;
-          background-color: #ff3f3a;
-          border-radius: 50%;
-        }
-        .slider-next {
-          content: url(/src/assets/images/tutors/next-btn.svg);
-          transition: 0.5s;
-        }
-        .slider-next:hover {
-          cursor: pointer;
-          background-color: #ff3f3a;
-          border-radius: 50%;
-        }
-      }
-      .slider {
-        width: 1230px;
-        height: 416px;
-        position: relative;
-        overflow: hidden;
-        margin-bottom: 180px;
-        .slider-line {
-          width: 1890px;
-          height: 416px;
-          display: flex;
-          position: absolute;
-          left: 0;
-          transition: all ease 1s;
-          .slider-item {
-            width: 285px;
-            text-align: center;
-            margin-right: 30px;
-            img {
-              padding-bottom: 16px;
-              width: 285px;
-            }
-            .item-title {
-              font-size: 20px;
-              line-height: 30px;
-            }
-            .item-subtitle {
-              font-weight: normal;
-              color: #787a80;
-            }
-          }
-        }
-      }
-      .subtitle-two {
-        text-align: center;
-        margin-bottom: 8px;
-      }
-      .title-two {
-        margin-bottom: 60px;
-        text-align: center;
-      }
-      .slider-two {
-        margin: 0 105px 160px;
-        overflow: hidden;
-        .slider-line-two {
-          width: 4080px;
-          height: 404px;
-          display: flex;
-          justify-content: center;
-          position: relative;
-          left: 0;
-          transition: all ease 1s;
-          .slider-two-item {
-            padding: 64px 105px 64px 163px;
-            width: 1020px;
-            background-color: #fff;
-            .text {
-              margin-bottom: 24px;
-              font-weight: normal;
-              font-size: 20px;
-              line-height: 30px;
-              position: relative;
-            }
-            .text::before {
-              content: url(/src/assets/images/tutors/braces.svg);
-              position: absolute;
-              left: -58px;
-              top: -3px;
-            }
-            .user-profile {
-              display: flex;
-              img {
-                margin-right: 20px;
-              }
-              .discrp {
-                margin: 11px 0;
-                .name {
-                  margin-bottom: 4px;
-                }
-                .position {
-                  font-weight: normal;
-                  font-size: 14px;
-                  line-height: 21px;
-                }
-              }
-            }
-          }
-        }
-        .slider-btn-two {
-          display: flex;
-          justify-content: space-between;
-          .slider-prev-two {
-            content: url(/src/assets/images/tutors/prev-btn.svg);
-            position: absolute;
-            left: 15px;
-            bottom: 200px;
-            transition: 0.5s;
-          }
-          .slider-prev-two:hover {
-            border-radius: 50%;
-            background-color: #ff3f3a;
-          }
-          .slider-next-two {
-            content: url(/src/assets/images/tutors/next-btn.svg);
-            position: absolute;
-            right: 15px;
-            bottom: 200px;
-            transition: 0.5s;
-          }
-          .slider-next-two:hover {
-            border-radius: 50%;
-            background-color: #ff3f3a;
-          }
-        }
-      }
-    }
+  padding: 166px 0 100px;
+  background: url(/src/assets/images/tutors/Background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tutors-title {
+  text-align: left;
+}
+.slider {
+  width: 1230px;
+  height: 416px;
+  position: relative;
+  overflow: hidden;
+}
+.slider-line {
+  width: 1890px;
+  height: 416px;
+  display: flex;
+  position: absolute;
+  left: 0;
+  transition: all ease 1s;
+}
+.slider-item {
+  width: 285px;
+  text-align: center;
+  margin-right: 30px;
+  img {
+    padding-bottom: 16px;
+    width: 100%;
   }
+  .item-title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .item-subtitle {
+    font-weight: normal;
+    color: #787a80;
+  }
+}
+.slider-btn {
+  display: flex;
+  justify-content:flex-end;
+  padding-bottom: 20px;
+}
+.slider-prev {
+  content: url("/src/assets/images/tutors/prev-btn.svg");
+  margin-right: 24px;
+  transition: 0.5s;
+}
+.slider-prev:hover {
+  cursor: pointer;
+  background-color: #ff3f3a;
+  border-radius: 50%;
+}
+.slider-next {
+  content: url(/src/assets/images/tutors/next-btn.svg);
+  transition: 0.5s;
+}
+.slider-next:hover {
+  cursor: pointer;
+  background-color: #ff3f3a;
+  border-radius: 50%;
+}
+
+@media (max-width: 1300px) {
+  .slider {
+    width: 915px;
+    height: 416px;
+    position: relative;
+    overflow: hidden;
+    
+  }
+}
+@media (max-width: 990px) {
+  .slider {
+    width: 585px;
+    height: 416px;
+    position: relative;
+    overflow: hidden;
+  }
+}
+@media (max-width: 670px) {
+  .slider {
+    width: 285px;
+    height: 416px;
+    position: relative;
+    overflow: hidden;
+    
+  }
+}

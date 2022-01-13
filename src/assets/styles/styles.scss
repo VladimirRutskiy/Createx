@@ -58,6 +58,18 @@ h2 {
   color: #1e212c;
 }
 h3 {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 42px;
+  color: #1e212c;
+}
+h4 {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 30px;
+  color: #1e212c;
+}
+.tag {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 1px;
@@ -105,7 +117,13 @@ h3 {
   margin: 0 auto;
   padding: 0 50px;
 }
-
+.section-header {
+  margin-bottom: 60px;
+}
+.content-text {
+  font-weight: normal;
+  line-height: 26px;
+}
 @media (max-width: 1180px) {
   h1 {
     font-size: 54px;
@@ -115,7 +133,7 @@ h3 {
     font-size: 36px;
     line-height: 50px;
   }
-  h3 {
+  .tag {
     font-size: 16px;
     line-height: 24px;
   }
@@ -129,8 +147,26 @@ h3 {
     font-size: 36px;
     line-height: 50px;
   }
-  h3 {
+  h3{
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .tag {
     font-size: 16px;
     line-height: 24px;
+  }
+  .section-header {
+    margin-bottom: 30px;
+  }
+  .content-text {
+    font-weight: normal;
+    line-height: 20px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 830px){
+  h4 {
+    font-size: 14px;
+    line-height: 20px;
   }
 }

@@ -1,41 +1,72 @@
 .about {
-    background-image: url(/src/assets/images/About/background-about.jpg);
-    background-repeat: no-repeat;
-    margin: 180px 0;
-    .wrapper-about {
-      display: flex;
-      justify-content: space-between;
-      .image {
-        width: 705px;
-        img {
-          object-fit: cover;
-          width: 100%;
-        }
-      }
-      .content {
-        margin-left: 135px;
-        max-width: 390px;
-        .h3-like {
-          margin-bottom: 8px;
-        }
-        .h2-like {
-          margin-bottom: 40px;
-        }
-        .list {
-          font-weight: normal;
-          line-height: 26px;
-          margin-bottom: 22px;
-          li {
-            padding-left: 32px;
-            position: relative;
-          }
-          li::before {
-            content: url(/src/assets/images/About/check-about.png);
-            position: absolute;
-            left: 0px;
-            top: 4px;
-          }
-        }
-      }
-    }
+  background-image: url(/src/assets/images/About/background-about.jpg);
+  background-repeat: no-repeat;
+  margin: 180px 0;
+}
+.wrapper-about {
+  display: flex;
+  justify-content: space-between;
+}
+.about-image {
+  width: 705px;
+  img {
+    object-fit: cover;
+    width: 100%;
   }
+}
+.about-content {
+  margin-left: 135px;
+  max-width: 390px;
+}
+.tag {
+  margin-bottom: 8px;
+}
+.section-list {
+  font-weight: normal;
+  line-height: 26px;
+  margin-bottom: 22px;
+  li {
+    padding-left: 32px;
+    position: relative;
+  }
+  li::before {
+    content: url(/src/assets/images/About/check-about.png);
+    position: absolute;
+    left: 0px;
+    top: 4px;
+  }
+}
+@media (max-width: 1180px) {
+  .section-list{
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .about-content{
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper-about {
+    flex-direction: column;
+  }
+  .about-image{
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .about-content{
+    min-width: 100%;
+    margin-left: 0;
+  } 
+  .about-header{
+    text-align: left;
+  }
+}
+@media (max-width: 600px) {
+  .about-btn{
+    min-width: 100%;
+  }
+}

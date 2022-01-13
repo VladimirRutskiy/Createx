@@ -1,78 +1,123 @@
 .events {
-    padding: 80px 0;
-    background: url(/src/assets/images/events/bg-color.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    .wrapper {
-      .h3-like {
-        text-align: center;
-        padding-bottom: 8px;
+  padding: 80px 0;
+  background: url(/src/assets/images/events/bg-color.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.events-tag {
+  text-align: center;
+}
+.events-title {
+  text-align: center;
+}
+.list {
+  margin-bottom: 60px;
+  &-item {
+    display: grid;
+    grid-template-columns: 70px 120px auto 136px;
+    margin-bottom: 24px;
+    padding: 32px 40px;
+    background-color: #fff;
+    position: relative;
+    &_day {
+      align-self: center;
+      margin-right: 20px;
+      font-weight: 900;
+      font-size: 48px;
+      line-height: 62px;
+      letter-spacing: 1px;
+      color: #ff3f3a;
+    }
+    &_date {
+      align-self: center;
+      &-month {
+        padding-bottom: 4px;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 30px;
       }
-      .h2-like {
-        text-align: center;
-        margin-bottom: 60px;
-      }
-      .list {
-        margin-bottom: 60px;
-        &-item {
-          display: flex;
-          margin-bottom: 24px;
-          padding: 32px 40px;
-          background-color: #fff;
-          position: relative;
-          .day {
-            margin-right: 20px;
-            font-weight: 900;
-            font-size: 48px;
-            line-height: 62px;
-            letter-spacing: 1px;
-            color: #ff3f3a;
-          }
-          .date {
-            margin-right: 40px;
-            .month {
-              padding-bottom: 4px;
-              font-weight: bold;
-              font-size: 20px;
-              line-height: 30px;
-            }
-            .time {
-              font-weight: normal;
-              color: #787a80;
-            }
-          }
-          .text {
-            margin-right: 30px;
-            &-title {
-              padding-bottom: 4px;
-              font-size: 20px;
-              line-height: 30px;
-            }
-            .subtitle {
-              font-weight: normal;
-              text-align: left;
-              color: #787a80;
-            }
-          }
-          .btn-clear {
-            position: absolute;
-            right: 40px;
-          }
-        }
-        &-item:hover {
-          transform: translateY(2%);
-          box-shadow: 0 20px 20px 0 rgba(247, 168, 161, 0.6);
-        }
-      }
-      .explore {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        &-title {
-          margin-right: 40px;
-          font-size: 28px;
-          line-height: 42px;
-        }
+      &-time {
+        font-weight: normal;
+        color: #787a80;
       }
     }
+    &_text {
+      margin-right: 30px;
+      &-title {
+        padding-bottom: 4px;
+      }
+      &-subtitle {
+        font-weight: normal;
+        text-align: left;
+        color: #787a80;
+      }
+    }
+    &-item:hover {
+      transform: translateY(2%);
+      box-shadow: 0 20px 20px 0 rgba(247, 168, 161, 0.6);
+    }
   }
+}
+.event-btn {
+  width: 136px !important;
+  padding: 16px 0 !important;
+  align-self: center;
+}
+.explore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &-title {
+    margin-right: 40px;
+    font-size: 28px;
+    line-height: 42px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .about-content {
+    margin-left: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .list-item {
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+    grid-row: 70px auto 70px;
+    //grid-auto-rows: 70px;
+    grid-template-areas:
+      ". a a . b b "
+      ". c c c c c "
+      ". . d d d d ";
+  }
+  .list-item_day {
+    grid-area: a;
+    font-size: 28px;
+    line-height: 42px;
+    letter-spacing: 1px;
+    color: #ff3f3a;
+  }
+  .list-item_date {
+    grid-area: b;
+  }
+  .list-item_text{
+    grid-area: c;
+  }
+  .event-btn {
+    align-self: end;
+    grid-area: d;
+  }
+  .list-item_text-subtitle{
+    margin-bottom: 10px;
+  }
+  .explore {
+    display: flex;
+    flex-direction: column;
+    &-title {
+      margin-right: 0;
+      margin-bottom: 20px;
+      font-size: 28px;
+      line-height: 42px;
+    }
+  }
+}
