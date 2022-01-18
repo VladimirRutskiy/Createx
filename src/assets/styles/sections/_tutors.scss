@@ -14,8 +14,6 @@
   cursor: pointer;
 }
 .swiper-container {
-  width: 1230px;
-  height: 416px;
   overflow: hidden;
 }
 .tutors-slider_wrapper {
@@ -88,4 +86,25 @@
 }
 .tutors-btn_next.swiper-button-next:after:hover {
   color: #fff;
+}
+
+@media (max-width: 1080px){
+  .tutors-btn_next.swiper-button-next {
+    top: 50px;
+  }
+  .tutors-btn_prev.swiper-button-prev{
+    top: 50px;
+  }
+}
+@media (max-width: 480px){
+  .tutors-btn_next.swiper-button-next {
+    bottom: -60px;
+    right: 30%;
+    top: auto;
+  }
+  .tutors-btn_prev.swiper-button-prev{
+    bottom: -60px;
+    left: 30%;
+    top: auto;
+  }
 }

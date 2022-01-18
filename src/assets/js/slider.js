@@ -1,43 +1,32 @@
-import Swiper, { Navigation, Pagination } from 'swiper';
+import Swiper, { Navigation, Pagination } from "swiper";
 Swiper.use([Navigation, Pagination]);
-import 'swiper/css';
+import "swiper/css";
 //import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import "swiper/css/pagination";
 
-
-
-new Swiper('.tutors-slider', {
-    navigation: {
-         nextEl: '.swiper-button-next',
-         prevEl: '.swiper-button-prev'
+new Swiper(".tutors-slider", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  slidesPerView: 4,
+  spaceBetween: 30,
+  loop: true,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
     },
-    slidesPerView: 4,
-    spaceBetween: 30,
-    loop: true
+    480: {
+      slidesPerView: 2,
+    },
+    680: {
+      slidesPerView: 3,
+    },
+    1020: {
+      slidesPerView: 4,
+    },
+  },
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // let offset = 0;
 // const sliderLine = document.querySelector('.slider-line');
@@ -76,4 +65,3 @@ new Swiper('.tutors-slider', {
 //      }
 //      sliderLineTwo.style.left = -offset + 'px';
 // });
-
