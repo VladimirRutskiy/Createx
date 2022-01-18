@@ -16,10 +16,6 @@
 .swiper-container {
   overflow: hidden;
 }
-.tutors-slider_wrapper {
-}
-.tutors-slider_slide {
-}
 .tutors-slider-image {
   margin-bottom: 16px;
 }
@@ -39,8 +35,6 @@
   font-size: 16px;
   line-height: 26px;
   color: #787A80;
-}
-.swiper-button-prev {
 }
 .tutors-btn_prev.swiper-button-prev {
   position: absolute;
@@ -76,7 +70,7 @@
   top: 7px;
   left: 8px;
 }
-.swiper-button-prev.swiper-button-prev:after {
+.tutors-btn_prev.swiper-button-prev:after {
   content: url(/src/assets/images/tutors/prev-btn.svg);
   position: absolute;
   width: 24px;

@@ -113,9 +113,13 @@
   }
   .gallery{
     &-item{
-      max-width: 290px;
+      margin-right: 0;
       &_img img{
-        width: 290px;
+        width: 100%;
+      }
+      &_time{
+        text-align: center;
+        align-items: center;
       }
     }
   }

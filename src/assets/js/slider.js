@@ -6,8 +6,8 @@ import "swiper/css/pagination";
 
 new Swiper(".tutors-slider", {
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".tutors-btn_next",
+    prevEl: ".tutors-btn_prev",
   },
   slidesPerView: 4,
   spaceBetween: 30,
@@ -26,6 +26,20 @@ new Swiper(".tutors-slider", {
       slidesPerView: 4,
     },
   },
+});
+
+new Swiper(".testimonials-slider",{
+     navigation: {
+          nextEl: ".testimonials-btn_next",
+          prevEl: ".testimonials-btn_prev",
+        },
+     pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+     },
+     slidesPerView: 1,
+     loop: true,
+     //autoHeight: true,
 });
 
 // let offset = 0;

@@ -84,11 +84,10 @@
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 10px;
     grid-row: 70px auto 70px;
-    //grid-auto-rows: 70px;
     grid-template-areas:
-      ". a a . b b "
-      ". c c c c c "
-      ". . d d d d ";
+      "a a c c c d "
+      "b b c c c d ";
+    align-items: center;
   }
   .list-item_day {
     grid-area: a;
@@ -101,10 +100,11 @@
     grid-area: b;
   }
   .list-item_text{
+    margin-right: 0;
     grid-area: c;
   }
   .event-btn {
-    align-self: end;
+    align-self: center;
     grid-area: d;
   }
   .list-item_text-subtitle{
@@ -119,5 +119,45 @@
       font-size: 28px;
       line-height: 42px;
     }
+  }
+}
+@media (max-width: 630px) {
+  .list-item {
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
+    grid-row: 70px auto 70px;
+    grid-template-areas:
+      "a b b b d d "
+      "c c c c c c "
+      ;
+    align-items: center;
+     justify-items: center;
+  }
+  .list-item_text{
+    text-align: center;
+  }
+  .list-item_text-subtitle{
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px){
+  .list-item {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    grid-row: 70px auto 70px;
+    grid-template-areas:
+      "a b b "
+      "c c c "
+      "d d d ";
+    align-items: center;
+     justify-items: center;
+  }
+  .list-item_date-time{
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .explore-title{
+    text-align: center;
   }
 }

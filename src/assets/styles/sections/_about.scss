@@ -59,11 +59,12 @@
   }
   .about-content{
     min-width: 100%;
-    margin-left: 0;
+    margin-left: 0 !important;
   } 
   .about-header{
-    text-align: left;
+    text-align: center;
   }
+  
 }
 @media (max-width: 600px) {
   .about-btn{
