@@ -13,21 +13,9 @@
   justify-content: space-between;
   margin-bottom: 60px;
 }
-.tabs-btn {
+.benefits-tabs-btn {
   width: 307px;
-  padding: 10px 0;
-  text-align: center;
-  color: #9a9da5;
   position: relative;
-  border: 1px solid transparent;
-  cursor: pointer;
-}
-.tabs-btn.btn-active {
-  color: #ff3f3a;
-  border: 1px solid #ff3f3a;
-  border-radius: 4px;
-  filter: invert(40%) sepia(77%) saturate(2242%) hue-rotate(335deg)
-    brightness(97%) contrast(110%);
 }
 .star::before {
   content: url(/src/assets/images/benefits/Star.svg);

@@ -1,0 +1,106 @@
+.allcourses {
+  background-image: url(/src/assets/images/allcourses/background.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 120px 0;
+}
+.allcourses-header {
+  text-align: center;
+}
+.allcourses-tabs_nav {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 61px;
+  .allcourses-tabs_select{
+    display: none;
+    }
+}
+.allcourses-tabs_nav_content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.allcourses-tabs_btn.tabs-btn {
+  padding: 10px 20px;
+}
+.allcourses-tabs_search input {
+  width: 315px;
+  height: 44px;
+  padding: 0 16px;
+  border: 1px solid #d7dadd;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 21px;
+}
+.allcourses-tabs_search:after{
+    content: url(/src/assets/images/allcourses/Vector\ \(Stroke\).svg);
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 16px;
+    top: 14px;
+}
+.allcourses-cards{
+    display: grid;
+    grid-template-columns: 390px 390px 390px;
+    gap: 30px;
+    justify-items: center;
+    // grid-template-columns: repeat(3, 1fr);
+    // grid-gap: 20px;
+    // grid-row: 70px auto 70px;
+    // grid-template-areas:
+    //   "a b b "
+    //   "c c c "
+    //   "d d d ";
+    // align-items: center;
+    //  justify-items: center;
+}
+.allcourses-cards-item{
+    max-width: 100%;
+    flex-direction: column;
+    margin-bottom: 0;
+}
+@media (max-width: 1330px){
+    .allcourses-cards{
+        display: grid;
+        grid-template-columns: 320px 320px 320px;
+        gap: 30px;
+    }
+}
+@media (max-width: 1160px){
+    .allcourses-cards{
+        grid-template-columns: 250px 250px 250px;
+        .cards-item_title{
+            font-size: 16px;
+            line-height: 20px;
+        }
+        .cards-item_price{
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+    .allcourses-tabs_search input {
+        width: 215px;
+    }
+}
+@media (max-width: 960px){
+    .allcourses-tabs_nav {
+        .allcourses-tabs_select{
+          display: block;
+          height: 44px;
+          padding: 14px 40px;
+          }
+      }
+    .allcourses-cards{
+        grid-template-columns: 250px 250px;
+    }
+    .allcourses-tabs_nav_content{
+        display: none;
+    }
+}
+@media (max-width: 630px){
+    .allcourses-cards{
+        grid-template-columns: 250px;
+    }
+}

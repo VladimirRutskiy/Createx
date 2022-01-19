@@ -87,6 +87,7 @@ h4 {
   color: #fff;
   box-shadow: 0 10px 30px 0 rgba(229, 229, 229, 0.7);
   transition: 0.5s;
+  cursor: pointer;
 }
 .btn:active {
   color: #f9590f;
@@ -107,6 +108,20 @@ h4 {
 .btn-clear:active {
   color: #fff;
   box-shadow: none;
+}
+.tabs-btn {
+  padding: 10px 0;
+  text-align: center;
+  color: #9a9da5;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.tabs-btn.btn-active {
+  color: #ff3f3a;
+  border: 1px solid #ff3f3a;
+  border-radius: 4px;
+  filter: invert(40%) sepia(77%) saturate(2242%) hue-rotate(335deg)
+    brightness(97%) contrast(110%);
 }
 .container {
   max-width: 1230px;
