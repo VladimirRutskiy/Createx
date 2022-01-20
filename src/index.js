@@ -4,6 +4,7 @@ import "./assets/js/slider";
 import "./assets/js/scroll";
 import "./assets/js/burger";
 import "./assets/js/tabs";
+import "./assets/js/filter";
 
 
   

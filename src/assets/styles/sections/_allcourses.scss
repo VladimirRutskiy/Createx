@@ -21,9 +21,13 @@
   justify-content: space-between;
 }
 
-.allcourses-tabs_btn.tabs-btn {
-  padding: 10px 20px;
+.allcourses-tabs_btn {
+  padding: 10px 20px !important;
+  color: #9a9da5;
+  border: 1px solid transparent;
+  cursor: pointer;
 }
+
 .allcourses-tabs_search input {
   width: 315px;
   height: 44px;
@@ -61,6 +65,11 @@
     flex-direction: column;
     margin-bottom: 0;
 }
+.filter-hide{
+    display: none;
+}
+
+
 @media (max-width: 1330px){
     .allcourses-cards{
         display: grid;
