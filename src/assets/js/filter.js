@@ -1,3 +1,23 @@
+//Responsive btn for filters
+const selectBtn = document.querySelector('.allcourses-tabs_select');
+if (selectBtn){
+        const allcoursesNav = document.querySelector('.allcourses-tabs_nav_content');
+        selectBtn.addEventListener('click', function(){
+        selectBtn.classList.toggle('active-btn-filtr');
+        allcoursesNav.classList.toggle('active-filtr');
+        
+    });
+}
+
+
+
+
+
+
+
+
+//Filters 
+
 const filterItem = document.querySelectorAll('.allcourses-cards-item');
 let filterBtn = document.querySelector('.allcourses-tabs_nav_content');
 

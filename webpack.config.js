@@ -80,6 +80,10 @@ module.exports = ({ development }) => ({
       filename: "courses.html",
       template: "./src/courses.pug",
     }),
+    new HtmlWebpackPlugin({
+      filename: "about.html",
+      template: "./src/about.pug",
+    }),
     new webpack.HotModuleReplacementPlugin(),
     new MiniCssExtractPlugin({ filename: "[name].[contenthash].css" }),
     new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),

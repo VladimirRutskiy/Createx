@@ -27,7 +27,9 @@
   border: 1px solid transparent;
   cursor: pointer;
 }
-
+.allcourses-tabs_search{
+    position: relative;
+}
 .allcourses-tabs_search input {
   width: 315px;
   height: 44px;
@@ -38,12 +40,13 @@
   line-height: 21px;
 }
 .allcourses-tabs_search:after{
-    content: url(/src/assets/images/allcourses/Vector\ \(Stroke\).svg);
+    content: '';
     width: 16px;
     height: 16px;
     position: absolute;
     right: 16px;
     top: 14px;
+    background-image: (url(/src/assets/images/allcourses/Vector\ \(Stroke\).svg));
 }
 .allcourses-cards{
     display: grid;
@@ -93,7 +96,7 @@
         width: 215px;
     }
 }
-@media (max-width: 960px){
+@media (max-width: 1000px){
     .allcourses-tabs_nav {
         .allcourses-tabs_select{
           display: block;
@@ -106,10 +109,58 @@
     }
     .allcourses-tabs_nav_content{
         display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 44px;
+        left: 0;
+        width: 206px;
+        padding: 20px 0;
+        background-color: #fff;
+        border: 1px solid #ff3f3a;
+        border-radius: 4px; 
+        z-index: 10;
+    }
+    .allcourses-tabs_btn.tabs-btn{
+        margin-bottom: 10px;
+        min-width: 204px;
+    }
+    .active-filtr{
+        display: flex;
+    }
+    .btn.allcourses-tabs_select.active-btn-filtr{
+        background-color: #fff;
+        color: #ff3f3a;
+        border: 1px solid #ff3f3a;
     }
 }
 @media (max-width: 630px){
+    .allcourses-tabs_nav{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .allcourses-tabs_search input {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .allcourses-tabs_nav .allcourses-tabs_select{
+        margin: 0 auto;
+        width: 215px;
+    }
+    .allcourses-tabs_nav_content{
+        top: 107px;
+        left: calc(50% - 108px);
+        width: 215px;
+        padding: 20px 0;
+        background-color: #fff;
+        border: 1px solid #ff3f3a;
+        border-radius: 4px; 
+    }
+
+    
     .allcourses-cards{
         grid-template-columns: 250px;
     }
+    
 }

@@ -25,3 +25,4 @@ function onTabClickButton(item){
     });
 }
 document.querySelector('.tabs-btn').click();
+
