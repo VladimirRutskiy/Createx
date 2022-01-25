@@ -6,12 +6,14 @@
 }
 .allcourses-header {
   text-align: center;
+  animation: left 3s 1;
 }
 .allcourses-tabs_nav {
   display: flex;
   justify-content: space-between;
   position: relative;
   margin-bottom: 61px;
+  animation: right 3s 1;
   .allcourses-tabs_select{
     display: none;
     }

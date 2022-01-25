@@ -15,9 +15,9 @@
   display: flex;
   justify-content: space-between;
   padding-top: 200px;
-}
-.content-text {
-  max-width: 496px;
+  &_text{
+    animation: left 3s 1;
+  }
 }
 .btn-play {
   margin-bottom: 20px;
@@ -60,6 +60,7 @@
 }
 .content-image {
   max-width: 602px;
+  animation: right 3s 1;
   img {
     width: 100%;
     height: auto;
@@ -75,6 +76,7 @@
       display: flex;
       align-items: center;
       position: relative;
+      animation: bottom 3s 1;
 
       span {
         font-size: 46px;

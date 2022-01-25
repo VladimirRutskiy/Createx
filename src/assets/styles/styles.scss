@@ -140,6 +140,22 @@ h4 {
   font-weight: normal;
   line-height: 26px;
 }
+@keyframes left{
+  0%{
+      transform: translateX(-1000px);
+  }
+}
+@keyframes right{
+  0%{
+      transform: translateX(1000px);
+  }
+}
+@keyframes bottom{
+  0%{
+      transform: translateY(200px);
+  }
+}
+
 @media (max-width: 1180px) {
   h1 {
     font-size: 54px;

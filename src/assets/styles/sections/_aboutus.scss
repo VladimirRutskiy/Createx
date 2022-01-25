@@ -7,10 +7,12 @@
 }
 .aboutus-header {
   margin-bottom: 52px;
+  animation: text 4s 1;
 }
 .aboutus-content {
   max-width: 600px;
   margin-right: 20px;
+  animation: left 3s 1;
 }
 
 .sub-content-text {
@@ -26,6 +28,7 @@
 }
 .aboutus-image img{
     max-width: 465px;
+    animation: right 3s 1;
 }
 
 @media (max-width:1050px){
