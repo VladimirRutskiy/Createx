@@ -37,14 +37,14 @@
 .sitemap-list {
   margin-right: 50px;
   padding-bottom: 50px;
-  &_title {
+  &__title {
     color: #fff;
     margin-bottom: 12px;
   }
-  &_item {
+  &__item {
     margin-bottom: 8px;
   }
-  &_item:hover {
+  &__item:hover {
     cursor: pointer;
     color: #fff;
   }
@@ -52,14 +52,14 @@
 .courses-list {
   margin-right: 50px;
   padding-bottom: 50px;
-  &_title {
+  &__title {
     color: #fff;
     margin-bottom: 12px;
   }
-  &_item {
+  &__item {
     margin-bottom: 8px;
   }
-  &_item:hover {
+  &__item:hover {
     cursor: pointer;
     color: #fff;
   }
@@ -71,15 +71,15 @@
     display: block;
     margin-bottom: 8px;
   }
-  &_title {
+  &__title {
     color: #fff;
     margin-bottom: 12px;
   }
-  &_tel {
+  &__tel {
     padding-left: 24px;
     position: relative;
   }
-  &_tel::before {
+  &__tel::before {
     content: url(/src/assets/images/footer/iPhone.svg);
     position: absolute;
     top: 3px;
@@ -87,15 +87,15 @@
     filter: invert(56%) sepia(21%) saturate(27%) hue-rotate(190deg)
       brightness(89%) contrast(91%);
   }
-  &_tel:hover {
+  &__tel:hover {
     filter: invert(99%) sepia(99%) saturate(0%) hue-rotate(193deg)
       brightness(108%) contrast(200%);
   }
-  &_mail {
+  &__mail {
     padding-left: 24px;
     position: relative;
   }
-  &_mail::before {
+  &__mail::before {
     content: url(/src/assets/images/footer/Union.svg);
     position: absolute;
     top: 3px;
@@ -103,18 +103,18 @@
     filter: invert(56%) sepia(21%) saturate(27%) hue-rotate(190deg)
       brightness(89%) contrast(91%);
   }
-  &_mail:hover {
+  &__mail:hover {
     filter: invert(99%) sepia(99%) saturate(0%) hue-rotate(193deg)
       brightness(108%) contrast(200%);
   }
 }
 .footer-signup {
   width: 286px;
-  &_title {
+  &__title {
     color: #fff;
     margin-bottom: 24px;
   }
-  &_field {
+  &__field {
     margin-bottom: 12px;
     position: relative;
     input {
@@ -133,7 +133,7 @@
       cursor: pointer;
     }
   }
-  &_description {
+  &__description {
     font-weight: normal;
     font-size: 10px;
     line-height: 15px;
@@ -142,7 +142,7 @@
 .footer-line {
   padding: 20px 0px;
   background-color: #343741;
-  &_text {
+  &__text {
     span {
       padding-left: 20px;
       position: relative;
@@ -180,7 +180,7 @@
     flex-direction: column;
     align-items: center;
   }
-  .footer-line_text{
+  .footer-line__text{
     font-size: 14px;
     line-height: 16px;
     margin-bottom: 30px;

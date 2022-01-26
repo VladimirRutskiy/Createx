@@ -1,5 +1,5 @@
 .tutors {
-  padding: 166px 0 100px;
+  padding: 166px 0 90px;
   background: url(/src/assets/images/tutors/Background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,10 +16,10 @@
 .swiper-container {
   overflow: hidden;
 }
-.tutors-slider-image {
+.tutors-slider__image {
   margin-bottom: 16px;
 }
-.tutors-slider-image img {
+.tutors-slider__image img {
   width: 100%;
   height: 100%;
 }
@@ -36,7 +36,7 @@
   line-height: 26px;
   color: #787A80;
 }
-.tutors-btn_prev.swiper-button-prev {
+.tutors-btn__prev.swiper-button-prev {
   position: absolute;
   width: 40px;
   height: 40px;
@@ -45,7 +45,7 @@
   right: 120px;
   cursor: pointer;
 }
-.tutors-btn_next.swiper-button-next {
+.tutors-btn__next.swiper-button-next {
   position: absolute;
   width: 40px;
   height: 40px;
@@ -54,15 +54,15 @@
   right: 60px;
   cursor: pointer;
 }
-.tutors-btn_prev.swiper-button-prev:hover {
+.tutors-btn__prev.swiper-button-prev:hover {
   background-color: #ff3f3a;
   border-radius: 50%;
 }
-.tutors-btn_next.swiper-button-next:hover {
+.tutors-btn__next.swiper-button-next:hover {
   background-color: #ff3f3a;
   border-radius: 50%;
 }
-.tutors-btn_next.swiper-button-next:after {
+.tutors-btn__next.swiper-button-next:after {
   content: url(/src/assets/images/tutors/next-btn.svg);
   position: absolute;
   width: 24px;
@@ -70,7 +70,7 @@
   top: 7px;
   left: 8px;
 }
-.tutors-btn_prev.swiper-button-prev:after {
+.tutors-btn__prev.swiper-button-prev:after {
   content: url(/src/assets/images/tutors/prev-btn.svg);
   position: absolute;
   width: 24px;
@@ -78,25 +78,25 @@
   top: 7px;
   left: 8px;
 }
-.tutors-btn_next.swiper-button-next:after:hover {
+.tutors-btn__next.swiper-button-next:after:hover {
   color: #fff;
 }
 
 @media (max-width: 1080px){
-  .tutors-btn_next.swiper-button-next {
+  .tutors-btn__next.swiper-button-next {
     top: 50px;
   }
-  .tutors-btn_prev.swiper-button-prev{
+  .tutors-btn__prev.swiper-button-prev{
     top: 50px;
   }
 }
 @media (max-width: 480px){
-  .tutors-btn_next.swiper-button-next {
+  .tutors-btn__next.swiper-button-next {
     bottom: -60px;
     right: 30%;
     top: auto;
   }
-  .tutors-btn_prev.swiper-button-prev{
+  .tutors-btn__prev.swiper-button-prev{
     bottom: -60px;
     left: 30%;
     top: auto;

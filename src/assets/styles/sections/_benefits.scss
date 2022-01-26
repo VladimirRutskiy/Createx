@@ -1,5 +1,5 @@
 .benefits {
-  margin: 120px 0;
+  padding: 90px 0;
 }
 .benefits-tag {
   text-align: center;
@@ -13,7 +13,7 @@
   justify-content: space-between;
   margin-bottom: 60px;
 }
-.benefits-tabs-btn {
+.benefits-tabs__btn {
   width: 307px;
   position: relative;
 }
@@ -36,7 +36,7 @@
 .tabs-item {
   display: none;
   justify-content: space-between;
-  &_title {
+  &__title {
     margin-top: 122px;
     margin-bottom: 24px;
     text-align: left;
@@ -44,7 +44,7 @@
     font-size: 32px;
     line-height: 42px;
   }
-  &_text {
+  &__text {
     width: 495px;
     padding-right: 20px;
   }
@@ -52,21 +52,21 @@
 .tab-active {
   display: flex;
 }
-.tabs-item_img {
+.tabs-item__img {
   max-height: 440px;
 }
 
 @media (max-width: 1160px) {
-  .tabs-item_img {
+  .tabs-item__img {
     max-height: 400px;
   }
 }
 @media (max-width: 1080px) {
-  .tabs-item_img {
+  .tabs-item__img {
     max-height: 300px;
   }
 
-  .tabs-item_title {
+  .tabs-item__title {
     margin-top: 42px;
   }
 }
@@ -86,7 +86,7 @@
     flex-direction: column;
     max-width: 300px;
   }
-  .tabs-item_text{
+  .tabs-item__text{
     margin-bottom: 20px;
   }
 }
@@ -107,14 +107,14 @@
   }
   .tabs-item{
     max-width: 100%;
-    &_title{
+    &__title{
       margin-top: 0;
     }
-    &_text{
+    &__text{
       max-width: 100%;
     }
   }
-  .tabs-item_img{
+  .tabs-item__img{
     max-width: 340px;
   }
 }

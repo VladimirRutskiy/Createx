@@ -1,5 +1,5 @@
 .events {
-  padding: 80px 0;
+  padding: 90px 0;
   background: url(/src/assets/images/events/bg-color.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -19,7 +19,7 @@
     padding: 32px 40px;
     background-color: #fff;
     position: relative;
-    &_day {
+    &__day {
       align-self: center;
       margin-right: 20px;
       font-weight: 900;
@@ -28,7 +28,7 @@
       letter-spacing: 1px;
       color: #ff3f3a;
     }
-    &_date {
+    &__date {
       align-self: center;
       &-month {
         padding-bottom: 4px;
@@ -41,7 +41,7 @@
         color: #787a80;
       }
     }
-    &_text {
+    &__text {
       margin-right: 30px;
       &-title {
         padding-bottom: 4px;
@@ -89,17 +89,17 @@
       "b b c c c d ";
     align-items: center;
   }
-  .list-item_day {
+  .list-item__day {
     grid-area: a;
     font-size: 28px;
     line-height: 42px;
     letter-spacing: 1px;
     color: #ff3f3a;
   }
-  .list-item_date {
+  .list-item__date {
     grid-area: b;
   }
-  .list-item_text{
+  .list-item__text{
     margin-right: 0;
     grid-area: c;
   }
@@ -107,7 +107,7 @@
     align-self: center;
     grid-area: d;
   }
-  .list-item_text-subtitle{
+  .list-item__text-subtitle{
     margin-bottom: 10px;
   }
   .explore {
@@ -133,10 +133,10 @@
     align-items: center;
      justify-items: center;
   }
-  .list-item_text{
+  .list-item__text{
     text-align: center;
   }
-  .list-item_text-subtitle{
+  .list-item__text-subtitle{
     text-align: center;
   }
 }
@@ -153,7 +153,7 @@
     align-items: center;
      justify-items: center;
   }
-  .list-item_date-time{
+  .list-item__date-time{
     font-size: 14px;
     line-height: 16px;
   }

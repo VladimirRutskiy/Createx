@@ -6,8 +6,8 @@ import "swiper/css/pagination";
 
 new Swiper(".tutors-slider", {
   navigation: {
-    nextEl: ".tutors-btn_next",
-    prevEl: ".tutors-btn_prev",
+    nextEl: ".tutors-btn__next",
+    prevEl: ".tutors-btn__prev",
   },
   slidesPerView: 4,
   spaceBetween: 30,
@@ -30,8 +30,8 @@ new Swiper(".tutors-slider", {
 
 new Swiper(".testimonials-slider",{
      navigation: {
-          nextEl: ".testimonials-btn_next",
-          prevEl: ".testimonials-btn_prev",
+          nextEl: ".testimonials-btn__next",
+          prevEl: ".testimonials-btn__prev",
         },
      pagination: {
           el: '.swiper-pagination',

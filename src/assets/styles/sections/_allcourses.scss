@@ -8,31 +8,31 @@
   text-align: center;
   animation: left 3s 1;
 }
-.allcourses-tabs_nav {
+.allcourses-tabs__nav {
   display: flex;
   justify-content: space-between;
   position: relative;
   margin-bottom: 61px;
   animation: right 3s 1;
-  .allcourses-tabs_select{
+  .allcourses-tabs__select{
     display: none;
     }
 }
-.allcourses-tabs_nav_content {
+.allcourses-tabs__nav__content {
   display: flex;
   justify-content: space-between;
 }
 
-.allcourses-tabs_btn {
+.allcourses-tabs__btn {
   padding: 10px 20px !important;
   color: #9a9da5;
   border: 1px solid transparent;
   cursor: pointer;
 }
-.allcourses-tabs_search{
+.allcourses-tabs__search{
     position: relative;
 }
-.allcourses-tabs_search input {
+.allcourses-tabs__search input {
   width: 315px;
   height: 44px;
   padding: 0 16px;
@@ -41,7 +41,7 @@
   font-size: 14px;
   line-height: 21px;
 }
-.allcourses-tabs_search:after{
+.allcourses-tabs__search:after{
     content: '';
     width: 16px;
     height: 16px;
@@ -85,22 +85,22 @@
 @media (max-width: 1160px){
     .allcourses-cards{
         grid-template-columns: 250px 250px 250px;
-        .cards-item_title{
+        .cards-item__title{
             font-size: 16px;
             line-height: 20px;
         }
-        .cards-item_price{
+        .cards-item__price{
             font-size: 12px;
             line-height: 16px;
         }
     }
-    .allcourses-tabs_search input {
+    .allcourses-tabs__search input {
         width: 215px;
     }
 }
 @media (max-width: 1000px){
-    .allcourses-tabs_nav {
-        .allcourses-tabs_select{
+    .allcourses-tabs__nav {
+        .allcourses-tabs__select{
           display: block;
           height: 44px;
           padding: 14px 40px;
@@ -109,7 +109,7 @@
     .allcourses-cards{
         grid-template-columns: 250px 250px;
     }
-    .allcourses-tabs_nav_content{
+    .allcourses-tabs__nav__content{
         display: none;
         flex-direction: column;
         position: absolute;
@@ -122,35 +122,35 @@
         border-radius: 4px; 
         z-index: 10;
     }
-    .allcourses-tabs_btn.tabs-btn{
+    .allcourses-tabs__btn.tabs-btn{
         margin-bottom: 10px;
         min-width: 204px;
     }
     .active-filtr{
         display: flex;
     }
-    .btn.allcourses-tabs_select.active-btn-filtr{
+    .btn.allcourses-tabs__select.active-btn-filtr{
         background-color: #fff;
         color: #ff3f3a;
         border: 1px solid #ff3f3a;
     }
 }
 @media (max-width: 630px){
-    .allcourses-tabs_nav{
+    .allcourses-tabs__nav{
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
         
     }
-    .allcourses-tabs_search input {
+    .allcourses-tabs__search input {
         width: 100%;
         margin-bottom: 20px;
     }
-    .allcourses-tabs_nav .allcourses-tabs_select{
+    .allcourses-tabs__nav .allcourses-tabs__select{
         margin: 0 auto;
         width: 215px;
     }
-    .allcourses-tabs_nav_content{
+    .allcourses-tabs__nav__content{
         top: 107px;
         left: calc(50% - 108px);
         width: 215px;
